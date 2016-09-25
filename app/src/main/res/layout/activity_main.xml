@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollViewOuter"
+    android:isScrollContainer="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.vision.myapplication.MainActivity"
+        android:id="@+id/headerLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/scrollView"
+            android:isScrollContainer="true"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:id="@+id/verticalLayout"
+                android:nestedScrollingEnabled="true"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.vision.myapplication.MainActivity"
+            android:id="@+id/footer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new row"
+                android:id="@+id/addRowButton"
+                android:layout_gravity="center_horizontal"
+                android:onClick="AddNewLine"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Game"
+                android:id="@+id/endGameButton"
+                android:layout_gravity="center_horizontal"
+                android:onClick="NewGameLine"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Row"
+                android:textColor="@color/Black"
+                android:id="@+id/deleteRowButton"
+                android:layout_gravity="center_horizontal"
+                android:onClick="DeleteLastLine"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

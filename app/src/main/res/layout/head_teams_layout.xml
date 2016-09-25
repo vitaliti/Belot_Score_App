@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/teamsLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/head_borderN"
+        android:maxHeight="50dp"
+        android:minWidth="100dp"
+        android:maxWidth="160dp"
+        android:layout_weight="0.5"
+        android:background="@color/Black"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@color/Black"
+            android:id="@+id/headN"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:focusableInTouchMode="false"
+            android:maxWidth="160dp"
+            android:minWidth="160dp"
+            android:background="@color/White"
+            android:layout_weight="0.5"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/head_borderV"
+        android:maxHeight="50dp"
+        android:minWidth="100dp"
+        android:maxWidth="160dp"
+        android:layout_weight="0.5"
+        android:background="@color/Black"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textColor="@color/Black"
+            android:id="@+id/headV"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:focusableInTouchMode="false"
+            android:maxWidth="160dp"
+            android:minWidth="160dp"
+            android:background="@color/White"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

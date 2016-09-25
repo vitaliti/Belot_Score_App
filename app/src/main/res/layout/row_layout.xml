@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/rowLayout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="1"
+             android:id="@+id/cellLayoutN"
+             android:maxHeight="50dp"
+             android:minWidth="100dp"
+             android:maxWidth="160dp"
+             android:layout_weight="0.5"
+             android:background="@color/Black"
+             android:padding="2dp">
+
+              <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/Black"
+                android:textSize="35sp"
+                android:textAlignment="center"
+                android:background="@color/White"
+                android:layout_weight="0.5"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:maxHeight="250dp"
+                android:minWidth="160dp"
+                android:maxWidth="160dp"
+                android:singleLine="true"
+                android:maxLength="8"
+                android:id="@+id/N"
+                android:inputType="numberSigned"
+                android:digits="1234567890.-"
+                android:nextFocusDown="@+id/V"
+                />
+
+          </LinearLayout>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="1"
+             android:id="@+id/cellLayoutV"
+             android:maxHeight="50dp"
+             android:minWidth="100dp"
+             android:maxWidth="160dp"
+             android:layout_weight="0.5"
+             android:background="@color/Black"
+             android:padding="2dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/Black"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:background="@color/White"
+            android:layout_weight="0.5"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxHeight="250dp"
+            android:minWidth="160dp"
+            android:maxWidth="160dp"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:id="@+id/V"
+            android:inputType="numberSigned"
+            android:digits="1234567890.-"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+

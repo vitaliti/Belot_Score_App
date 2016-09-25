@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Belot Score</string>
+    <string name="rules">Official rules at https://www.pagat.com/jass/belote.html</string>
+    <string name="app_things">
+        \n - Pressing New Row can only be done when both teams have score in 10-15 format
+        \n - Calculations on Score are done only on previous row.If you change any other row,the changes won\'t show.
+        \n - The game win/loss row can be edited, but the app will continue to calculate with the previuos score.
+    </string>
+</resources>
